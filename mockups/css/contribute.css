@@ -125,6 +125,10 @@ html, body {
   height: auto;
 }
 
+.con-pictures:nth-of-type(2) {
+  margin-top: 3vh;
+}
+
 .con-button{
   width:10vw;
   height:8vh;
@@ -138,34 +142,40 @@ html, body {
   font-size: 3vh;
 }
 
+#button1 {
+  background-color: #EF7F1A;
+}
+
 #con-choose{
-  display:flex;
+  display: flex;
   flex-direction: row;
   margin-right: 5vw;
-  z-index:3;
+  z-index: 3;
 }
 
 #con-buttons{
   display:flex;
   flex-direction: column; 
   margin-left: 0vw;
+  margin-right: 1vw;
   margin-top: 7.5vh;
 }
 
 #con-paragraph{
-  margin-left: 8vw;
   border-radius: 1vh;
   background-color: #68b436;
-  width:40vw;
+  width: 44vw;
   height: 60vh;
   margin-top: 7.5vh;
-  margin-left:2vw;
+  margin-left: 0vw;
+  margin-right: 0vw;
 }
 
 #paragraph1{
-  width:30vw;
-  margin-left:5vw;
+  width: 30vw;
+  margin: auto;
   margin-top: 5vh;
+
 }
 
 .con-info-title{
@@ -175,14 +185,13 @@ html, body {
 
 #paragraph2{
   width:30vw;
-  margin-left:5vw;
+  margin: auto;
   margin-top: 5vh;
 }
 
 #con-c-title{
   color: #ffffff;
   font-size: 3vh;
-  text-align: center;
 }
 
 #con-c-form{
@@ -215,6 +224,10 @@ html, body {
   margin-top:0;
   margin-bottom:2vh;
   border:2px solid #ffffff;
+}
+
+input::placeholder {
+  color: #FFFFF7;
 }
 
 .con-c-support input[type="radio"] {
@@ -291,9 +304,10 @@ footer{
 }
 
 #partner{
-  margin-left:5vw;
-  display:flex;
+  margin-left: 1vw;
+  display: flex;
   flex-direction: row;
+  justify-content: flex-start;
 }
 
 #powerbyt{
@@ -301,7 +315,8 @@ footer{
   color: white;
   font-size: 5vh;
   font-weight: 2;
-  margin-bottom: 2.5vh;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
 }
 
 .sponsor{

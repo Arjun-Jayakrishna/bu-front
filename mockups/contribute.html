@@ -58,10 +58,12 @@
         <div id="seperatetop"></div>
 
         <section id="consection">
+
           <div id="con-photo">
               <img src="assets/conpage/title_contrib.png" alt="I want to contribute" class="con-pictures">
               <img src="assets/conpage/img_contrib.png" alt="I want to contribute" class="con-pictures">
           </div>
+          
           <div id="con-choose">
             <div id="con-buttons">
               <button id="button1" class="con-button">Info</button>
@@ -74,7 +76,7 @@
               <div id="paragraph1">
                 <h1 class="con-info-title">Things U Help Us Do</h1>
                 <ul style="color: white">
-                  <li><p class="con-info-text">Build a 100% free database of resources withj ways to save them</p></li>
+                  <li><p class="con-info-text">Build a 100% free database of resources with ways to save them</p></li>
                   <li><p class="con-info-text">Maintain our internship program of 10 teams that produce all we do</p></li>
                   <li><p class="con-info-text">Support our annual free event for HS students from all over the world</p></li>
                 </ul>
@@ -86,46 +88,60 @@
               </div>
 
               <div id="paragraph2" class="hidden">
-                <h1 id="con-c-title">Tell us who to thank and select an amount of support</h1>
+                <div id="con-c-page1">
+                  <h1 id="con-c-title">Tell us who to thank and select an amount of support</h1>
 
-                <div id="con-c-form">
-                  <div id="con-c-form-text">
-                    <p class="con-c-ft" style="margin-top:2vh;">Name</p>
-                    <p class="con-c-ft">Email</p>
-                    <p class="con-c-ft" style="margin-top:2.5vh;">Your Support</p>
+                  <div id="con-c-form">
+                    <div id="con-c-form-text">
+                      <p class="con-c-ft" style="margin-top:2vh;">Name</p>
+                      <p class="con-c-ft">Email</p>
+                      <p class="con-c-ft" style="margin-top:2.5vh;">Your Support</p>
+                    </div>
+                  
+                    <div id="con-c-form-form" style="display: flex; flex-direction: column;">
+                      <input type="text" name="name" class="con-c-ff" style="margin-top:2vh;">
+                      <input type="email" name="email" class="con-c-ff" >
+                      <input type="text" name="support" placeholder="$USD" class="con-c-ff">
+                    </div>
                   </div>
-                
-                  <div id="con-c-form-form" style="display: flex; flex-direction: column;">
-                    <input type="text" name="name" class="con-c-ff" style="margin-top:2vh;">
-                    <input type="email" name="email" class="con-c-ff" >
-                    <input type="text" name="support" placeholder="US$" class="con-c-ff">
+
+                  <div class="con-c-support">
+                    <div id="con-c-support-up">
+                      <input type="radio" id="US10" name="radio" value="US10" class="con-c-su" checked>
+                      <label for="US10"><p class="con-csud">US$10</p></label>
+                  
+                      <input type="radio" id="US20" name="radio" class="con-c-su" value="US20">
+                      <label for="US20"><p class="con-csud">US$20</p></label>
+                  
+                      <input type="radio" id="US40" name="radio" class="con-c-su" value="US40">
+                      <label for="US40"><p class="con-csud">US$40</p></label> 
+                    </div>
+                    <div id="con-c-support-down">
+                      <input type="radio" id="US60" name="radio" class="con-c-sd" value="US60">
+                      <label for="US60"><p class="con-csud">US$60</p></label>
+
+                      <input type="radio" id="US80" name="radio" class="con-c-sd" value="US80">
+                      <label for="US80"><p class="con-csud">US$80</p></label>
+
+                      <input type="radio" id="US100" name="radio" class="con-c-sd" value="US100">
+                      <label for="US100"><p class="con-csud">US$100</p></label>
+                    </div>
                   </div>
+
+                  <input type="button" value="Next" id="con-c-next1">
                 </div>
 
-                <div class="con-c-support">
-                  <div id="con-c-support-up">
-                    <input type="radio" id="US10" name="radio" value="US10" class="con-c-su" checked>
-                    <label for="US10"><p class="con-csud">US$10</p></label>
-                
-                    <input type="radio" id="US20" name="radio" class="con-c-su" value="US20">
-                    <label for="US20"><p class="con-csud">US$20</p></label>
-                
-                    <input type="radio" id="US40" name="radio" class="con-c-su" value="US40">
-                    <label for="US40"><p class="con-csud">US$40</p></label> 
-                  </div>
-                  <div id="con-c-support-down">
-                    <input type="radio" id="US60" name="radio" class="con-c-sd" value="US60">
-                    <label for="US60"><p class="con-csud">US$60</p></label>
+                <!-- <div id="con-c-page2">
+                  <h1 id="con-c-title">Choose an area to support</h1>
+                  <ul>
+                    <li>Initiative 1</li>
+                    <li>Initiative 2</li>
+                    <li>Initiative 3</li>
+                  </ul>
 
-                    <input type="radio" id="US80" name="radio" class="con-c-sd" value="US80">
-                    <label for="US80"><p class="con-csud">US$80</p></label>
-
-                    <input type="radio" id="US100" name="radio" class="con-c-sd" value="US100">
-                    <label for="US100"><p class="con-csud">US$100</p></label>
-                  </div>
-                </div>
-
-                <input type="button" value="Next" id="con-c-next1">
+                  <input type="button" value="Previous" id="con-c-previous1">
+                  <input type="button" value="Next" id="con-c-next2">
+                </div> -->
 
               </div>
               <div id="paragraph3" class="hidden">This is paragraph 3.</div>
@@ -144,18 +160,27 @@
                       paragraph1.style.display = 'block';
                       paragraph2.style.display = 'none';
                       paragraph3.style.display = 'none';
+                      button1.style.backgroundColor = '#EF7F1A';
+                      button2.style.backgroundColor = 'transparent';
+                      button3.style.backgroundColor = 'transparent';
                   });
 
                   button2.addEventListener('click', () => {
                       paragraph1.style.display = 'none';
                       paragraph2.style.display = 'block';
                       paragraph3.style.display = 'none';
+                      button2.style.backgroundColor = '#EF7F1A';
+                      button1.style.backgroundColor = 'transparent';
+                      button3.style.backgroundColor = 'transparent';
                   });
 
                   button3.addEventListener('click', () => {
                       paragraph1.style.display = 'none';
                       paragraph2.style.display = 'none';
                       paragraph3.style.display = 'block';
+                      button3.style.backgroundColor = '#EF7F1A';
+                      button1.style.backgroundColor = 'transparent';
+                      button2.style.backgroundColor = 'transparent';
                   });
               </script>
           </div>
@@ -195,7 +220,6 @@
             <button class="home_bar_menubutton"><img src= "assets/menupage/01-logo-button-normal-white.png" alt = "open menu" class="home-bar-menuimage"></button>
           </div>
 
-
           <div id="con-firstpage">    
               <button id="1button" class="con-m-buttons">Info</button>
               <button id="2button" class="con-m-buttons">Contribute</button>
@@ -210,7 +234,7 @@
                 <button class="con-back">Back</button>
               </div>
               <div id="ci-content">
-                <h2>Things U help us Do</h2>
+                <h2>Things U Help Us Do</h2>
                 <h5>
                   Build a 100% free database of resources with ways to save them
                 </h5>
@@ -293,6 +317,28 @@
           </div>
 
         </section>
+
+        <footer id="footer">
+          <div id="partner">
+            <div>
+              <h2 id="powerbyt">Powered by</h2>
+            </div>
+
+            <div>
+              <img src="assets/homepage/powerby.png" alt="sponsor" class="sponsor">
+            </div>
+
+            <div>
+              <img src="assets/homepage/powerby.png" alt="sponsor" class="sponsor">
+            </div>
+
+            <div>
+              <img src="assets/homepage/powerby.png" alt="sponsor" class="sponsor">
+            </div>
+
+          </div>  
+
+        </footer>
 
       </div>
 
