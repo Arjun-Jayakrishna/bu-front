@@ -207,6 +207,7 @@ html, body {
 #con-c-title{
   color: #ffffff;
   font-size: 3vh;
+  text-align: center;
 }
 #con-ushop{
   color:#ffffff;
@@ -250,10 +251,9 @@ html, body {
 
 .con-c-ft{
   font-size: 2vh;
-  margin:0;
   padding-top: 0.2vh;
   padding-bottom: 0.2vh;
-  margin-bottom:2vh;
+  margin-bottom:2.5vh;
   color: #ffffff;
   
 }
@@ -295,32 +295,65 @@ input::placeholder {
 }
 
 .con-c-support input[type="radio"]:checked + label {
-background-color:#bfb;
+background-color:#008DD2;
 border-color: #4c4;
-}
-
-.con-c-su{
-  width:10vw;
-  margin-left: 2vw;
 }
 
 #con-c-support-down{
   margin-top: 2vh;
 }
-.con-c-sd{
-  width:10vw;
-  margin-left: 2vw;
-}
 
 .con-csud{
+  width: 5vw;
   color: #ffffff; 
   font-weight: bold;
+}
+
+.con-csud:hover {
+  cursor: grab;
 }
 
 #con-c-next1{
   background-color: #ea0f81;
   color: #ffffff;
   margin-top: 2vh;
+  border:0px;
+  border-radius: 1vh;
+  width: 5vw;
+  height:5vh;
+  font-family: 'coolvetica','coolvetica',serif;
+}
+
+#con-c-page2 {
+  padding-top: 25%;
+}
+
+#con-c-init {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+#con-c-init input {
+  appearance: none;
+  padding: 5px 5px;
+  border: 1px solid #fff;
+  border-radius: 2px;
+  background-color: #68b436;
+}
+
+#con-c-init input:checked {
+  background-color: #fff;
+}
+
+.buttons {
+  margin-top: 5%;
+  margin-left: 33%;
+}
+
+#con-c-previous2, #con-c-next2 {
+  background-color: #ea0f81;
+  color: #ffffff;
   border:0px;
   border-radius: 1vh;
   width: 5vw;
@@ -375,19 +408,17 @@ footer{
   margin-bottom: 1vh;
 }
 
-#listbar{
+#listbar {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-#listbar li{
+#listbar li {
   display:inline-flex;
   margin-right:2px;
   height: 20vh;
   width: auto;
-}
-
 }
 
 

@@ -131,19 +131,33 @@
                   <input type="button" value="Next" id="con-c-next1">
                 </div>
 
-                <!-- <div id="con-c-page2">
+                <div id="con-c-page2" class="hidden">
                   <h1 id="con-c-title">Choose an area to support</h1>
-                  <ul>
-                    <li>Initiative 1</li>
-                    <li>Initiative 2</li>
-                    <li>Initiative 3</li>
-                  </ul>
 
-                  <input type="button" value="Previous" id="con-c-previous1">
-                  <input type="button" value="Next" id="con-c-next2">
-                </div> -->
+                  <div id="con-c-init">
+                    <input type="radio" id="i_1" name="radio" class="con-c-in" value="i_1">
+                    <label for="i_1"><p class="con-csud">Initiative 1</p></label>
+                    <br>
+                    <input type="radio" id="i_2" name="radio" class="con-c-in" value="i_2">
+                    <label for="i_2"><p class="con-csud">Initiative 2</p></label>
+                    <br>
+                    <input type="radio" id="i_3" name="radio" class="con-c-in" value="i_3">
+                    <label for="i_3"><p class="con-csud">Initiative 3</p></label>
+                  </div>
+
+                  <div class="buttons">
+                    <input type="button" value="Previous" id="con-c-previous2">
+                    <input type="button" value="Next" id="con-c-next2">
+                  </div>
+                  
+                </div>
+
+                <div id="con-c-page3" class="hidden">
+                  <h1 id="con-c-title">Enter your card details:</h1>
+                </div>
 
               </div>
+
               <div id="paragraph3" class="hidden"> 
               <div>
              <img src= "assets/conpage/img_ushop-logo.png" width="225" height="100" id = "img_shoplogo" class='shop-pictures'>
@@ -177,11 +191,15 @@
 
               <script>
                   const button1 = document.getElementById('button1');
-                  const button2 = document.getElementById('button2');
-                  const button3 = document.getElementById('button3');
                   const paragraph1 = document.getElementById('paragraph1');
+                  const button2 = document.getElementById('button2');
                   const paragraph2 = document.getElementById('paragraph2');
+                  const button3 = document.getElementById('button3');
                   const paragraph3 = document.getElementById('paragraph3');
+                  const next1 = document.getElementById('con-c-next1');
+                  const c_page1 = document.getElementById('con-c-page1');
+                  const c_page2 = document.getElementById('con-c-page2');
+                  
 
                   button1.addEventListener('click', () => {
                       paragraph1.style.display = 'block';
@@ -199,6 +217,13 @@
                       button2.style.backgroundColor = '#EF7F1A';
                       button1.style.backgroundColor = 'transparent';
                       button3.style.backgroundColor = 'transparent';
+                  });
+
+                  next1.addEventListener('click', () => {
+                    c_page1.style.display = 'none'
+                    c_page2.style.display = 'block'
+                    c_page3.style.display = 'none'
+                    c_page4.style.display = 'none'
                   });
 
                   button3.addEventListener('click', () => {
