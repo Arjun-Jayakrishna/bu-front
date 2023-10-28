@@ -278,6 +278,25 @@ border-color: #4c4;
   height:40px;
   font-family: 'coolvetica','coolvetica',serif;
 }
+#con-c-next2{
+  background-color: #ea0f81;
+  color: #ffffff;
+  margin-top: 2vh;
+  border:0px;
+  border-radius: 1vh;
+  width: 5vw;
+  height:5vh;
+  font-family: 'coolvetica','coolvetica',serif;
+  left:40px; 
+  bottom:590px;
+}
+
+#con-c-next2 {
+  position: absolute;
+  left: 1600px;
+  top: 620px;
+}
+
 
 #con-c-page2 {
   padding-top: 25%;
