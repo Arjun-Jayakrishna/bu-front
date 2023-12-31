@@ -131,18 +131,6 @@ html {
   margin-top: 5vh;
 }
 
-#paragraph3 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 20px;
-}
-#con-gifts {
-  position: relative;
-  top: 20px; /* Adjust the top position as needed */
-  left: 30px; /* Adjust the left position as needed */
-}
 #con-gifts{
   text-align:right;
   color:#ffffff;
