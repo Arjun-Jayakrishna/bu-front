@@ -1,3 +1,5 @@
+/* GENERAL CSS */
+
 html, body {
   height: 100%;
   width: 100%;
@@ -13,6 +15,8 @@ html, body {
   font-family: "coolvetica";
   src: url("../../fonts/coolvetica.otf")format('opentype');
 }
+
+/* DESKTOP CSS */
 
 @media only screen and (min-width: 500px) {
 
@@ -491,6 +495,7 @@ footer{
   width: auto;
 }
 
+/* MOBILE CSS */
 
 @media only screen and (max-width: 500px) {
 
