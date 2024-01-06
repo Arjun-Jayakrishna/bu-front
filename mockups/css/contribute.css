@@ -121,7 +121,9 @@ html {
 
 #info_slides{
   margin: auto;
-  line-height: 2.5vw;
+  position: relative;
+  left: 20%;
+  font-size: 95%;
 }
 
 .info_title{
@@ -133,6 +135,25 @@ html {
   width:30vw;
   margin: auto;
   margin-top: 5vh;
+}
+
+#contribute_slide1{
+  position: relative;
+  left: 20%
+}
+
+#contribute_slide2 {
+  margin-left: 40%;
+  margin-top: 20%;
+}
+
+#contribute_slide3 {
+  margin-left: 20%;
+}
+
+#contribute_slide4 {
+  position: relative;
+  left: 30%;
 }
 
 #gifts{
@@ -230,6 +251,7 @@ input::placeholder {
 .support_amount {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   width: 40vw;
 }
 
@@ -269,6 +291,7 @@ border-color: #4c4;
   width: 5vw;
   color: #fafafa; 
   font-weight: bold;
+  font-size: 2vh;
 }
 
 .amount_label:hover {
@@ -315,16 +338,6 @@ border-color: #4c4;
   font-family: 'coolvetica','coolvetica',serif;
   left:10px; 
   bottom:590px;
-}
-
-#con-c-next2 {
-  position: absolute;
-  left: 1100px;
-  top: 500px;
-}
-
-#con-c-page2 {
-  padding-top: 25%;
 }
 
 #initiative_form {
@@ -424,7 +437,7 @@ border-color: #4c4;
   font-family: 'coolvetica','coolvetica',serif;
 }
 
-#con-c-page4 h1 {
+#contribute_slide4 h1 {
   font-size: 5vh;
   margin-top: 1vh;
   font-weight: bold;
