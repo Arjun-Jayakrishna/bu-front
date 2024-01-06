@@ -103,110 +103,117 @@
           
           <div id="con-choose">
             <div id="con-buttons">
-              <button id="button1" class="con-button">Info</button>
-              <button id="button2" class="con-button">Contribute</button>
-              <button id="button3" class="con-button">Merch</button>
+              <button id="info_button" class="con-button">Info</button>
+              <button id="contribute_button" class="con-button">Contribute</button>
+              <button id="merch_button" class="con-button">Merch</button>
             </div>
 
             
-            <div id="con-paragraph">
-              <div id="paragraph1">
-                <h1 class="con-info-title">Things U Help Us Do</h1>
-                <ul style="color: white">
-                  <li><p class="con-info-text">Build a 100% free database of resources with ways to save them</p></li>
-                  <li><p class="con-info-text">Maintain our internship program of 10 teams that produce all we do</p></li>
-                  <li><p class="con-info-text">Support our annual free event for HS students from all over the world</p></li>
+            <div id="slides">
+              <div id="info_slides">
+                <h1 class="info_title">Things U Help Us Do</h1>
+                <ul style="color: #fafafa">
+                  <li><p class="info_text">Build a 100% free database of resources with ways to save them</p></li>
+                  <li><p class="info_text">Maintain our internship program of 10 teams that produce all we do</p></li>
+                  <li><p class="info_text">Support our annual free event for HS students from all over the world</p></li>
                 </ul>
-                <h1 class="con-info-title">Things U Get for Your Support</h1>
-                <ul style="color: white">
-                  <li><p class="con-info-text">A gift card U can use in our U-Shop &</p></li>
-                  <li><p class="con-info-text">Our sincerest thanks and appreciation</p></li>
+                <h1 class="info_title">Things U Get for Your Support</h1>
+                <ul style="color: #fafafa">
+                  <li><p class="info_text">A gift card U can use in our U-Shop &</p></li>
+                  <li><p class="info_text">Our sincerest thanks and appreciation</p></li>
                 </ul>
               </div>
 
-              <div id="paragraph2" class="hidden">
-                <div id="con-c-page1">
-                  <h1 id="con-c-title">Tell us who to thank and select an amount of support</h1>
+              <div id="contribute_slides" class="hidden">
 
-                  <div id="con-c-form1">
-                    <div id="con-c-form-text">
-                      <p class="con-c-ft" style="margin-top:2vh;">Name</p>
-                      <p class="con-c-ft">Email</p>
-                      <p class="con-c-ft" style="margin-top:2.5vh;">Your Support</p>
+                <div id="contribute_slide1">
+                  
+                  <h1 id="contribute_title">Tell us who to thank and select an amount of support</h1>
+
+                  <div id="amount_form">
+                    <div id="details_labels">
+                      <p class="details_label" style="margin-top:2vh;">Name</p>
+                      <p class="details_label">Email</p>
+                      <p class="details_label" style="margin-top:2.5vh;">Your Support</p>
                     </div>
                   
-                    <div id="con-c-form-form" style="display: flex; flex-direction: column;">
-                      <input type="text" name="name" class="con-c-ff" placeholder="John Doe" style="margin-top:2vh;">
-                      <input type="email" name="email" placeholder="example@mail.com" class="con-c-ff" >
-                      <input type="text" name="support" placeholder="$USD" class="con-c-ff">
+                    <div id="details_inputs" style="display: flex; flex-direction: column;">
+                      <input type="text" name="name" class="detail_input" placeholder="John Doe" style="margin-top:2vh;">
+                      <input type="email" name="email" placeholder="example@mail.com" class="detail_input" >
+                      <input type="text" name="support" placeholder="$USD" class="detail_input">
                     </div>
                   </div>
 
-                  <div class="con-c-support">
-                    <div id="con-c-support-up">
-                      <input type="radio" id="US10" name="radio" value="US10" class="con-c-su" checked>
-                      <label for="US10"><p class="con-csud">US$10</p></label>
-                  
-                      <input type="radio" id="US20" name="radio" class="con-c-su" value="US20">
-                      <label for="US20"><p class="con-csud">US$20</p></label>
-                  
-                      <input type="radio" id="US40" name="radio" class="con-c-su" value="US40">
-                      <label for="US40"><p class="con-csud">US$40</p></label> 
-                    </div>
-                    <div id="con-c-support-down">
-                      <input type="radio" id="US60" name="radio" class="con-c-sd" value="US60">
-                      <label for="US60"><p class="con-csud">US$60</p></label>
+                  <div class="support_amount">
 
-                      <input type="radio" id="US80" name="radio" class="con-c-sd" value="US80">
-                      <label for="US80"><p class="con-csud">US$80</p></label>
-
-                      <input type="radio" id="US100" name="radio" class="con-c-sd" value="US100">
-                      <label for="US100"><p class="con-csud">US$100</p></label>
+                    <div id="support_upper">
+                      <input type="radio" id="US10" name="radio" value="US10" checked>
+                      <label for="US10"><p class="amount_label">US$10</p></label>
+                  
+                      <input type="radio" id="US20" name="radio" value="US20">
+                      <label for="US20"><p class="amount_label">US$20</p></label>
+                  
+                      <input type="radio" id="US40" name="radio" value="US40">
+                      <label for="US40"><p class="amount_label">US$40</p></label> 
                     </div>
+
+                    <div id="support_lower">
+                      <input type="radio" id="US60" name="radio" value="US60">
+                      <label for="US60"><p class="amount_label">US$60</p></label>
+
+                      <input type="radio" id="US80" name="radio" value="US80">
+                      <label for="US80"><p class="amount_label">US$80</p></label>
+
+                      <input type="radio" id="US100" name="radio" value="US100">
+                      <label for="US100"><p class="amount_label">US$100</p></label>
+                    </div>
+
                   </div>
 
                   <input type="button" value="Next" id="con-c-next1">
                 </div>
 
-                <div id="con-c-page2" class="hidden">
-                  <h1 id="con-c-title">Choose an area to support</h1>
+                <div id="contribute_slide2" class="hidden">
 
-                  <div id="con-c-form2">
-                    <input type="radio" id="i_1" name="radio" class="con-c-in" value="i_1">
-                    <label for="i_1"><p class="con-csud">Initiative 1</p></label>
+                  <h1 id="contribute_title">Choose an area to support</h1>
+
+                  <div id="initiative_form">
+                    <input type="radio" id="i_1" name="radio" value="i_1">
+                    <label for="i_1"><p class="initiative_label">Initiative 1</p></label>
                     <br>
-                    <input type="radio" id="i_2" name="radio" class="con-c-in" value="i_2">
-                    <label for="i_2"><p class="con-csud">Initiative 2</p></label>
+                    <input type="radio" id="i_2" name="radio" value="i_2">
+                    <label for="i_2"><p class="initiative_label">Initiative 2</p></label>
                     <br>
-                    <input type="radio" id="i_3" name="radio" class="con-c-in" value="i_3">
-                    <label for="i_3"><p class="con-csud">Initiative 3</p></label>
+                    <input type="radio" id="i_3" name="radio" value="i_3">
+                    <label for="i_3"><p class="initiative_label">Initiative 3</p></label>
                   </div>
 
                   <div class="buttons2">
                     <input type="button" value="Previous" id="con-c-previous2">
                     <input type="button" value="Next" id="con-c-next2">
                   </div>
+
                 </div>
 
-                <div id="con-c-page3" class="hidden">
-                  <h1 id="con-c-title">Enter your card details:</h1>
+                <div id="contribute_slide3" class="hidden">
+                  <h1 id="contribute_title">Enter your card details:</h1>
 
-                  <div id="con-c-form3">
-                    <div id="con-c-form-text">
-                      <p class="con-c-ft" style="margin-top:7vh;">Full Name</p>
-                      <p class="con-c-ft">Card Number</p>
+                  <div id="payment_form">
+                    <div id="details_labels">
+                      <p class="details_label" style="margin-top:7vh;">Full Name</p>
+                      <p class="details_label">Card Number</p>
                     </div>
                   
-                    <div id="con-c-form-form" style="display: flex; flex-direction: column;">
-                      <input type="text" name="full_name" class="con-c-ff" placeholder="John Doe" style="margin-top:7vh;">
-                      <input type="tel" name="credit-number" class="con-c-ff" pattern="\d*" maxlength="19" placeholder="Card Number">
+                    <div id="details_inputs" style="display: flex; flex-direction: column;">
+                      <input type="text" name="full_name" class="detail_input" placeholder="John Doe" style="margin-top:7vh;">
+                      <input type="tel" name="credit-number" class="detail_input" pattern="\d*" maxlength="19" placeholder="Card Number">
                     </div>
 
                   </div>
 
-                  <div class="con-c-cinfo">
-                    <p class="con-c-ft">Expiration</p>
-                    <select id="con-c-months" name="months">
+                  <div class="card_info">
+                    <p class="details_label">Expiration</p>
+                    <select id="months_input" name="months">
                       <option value="jan">January</option>
                       <option value="feb">February</option>
                       <option value="mar">March</option>
@@ -220,13 +227,15 @@
                       <option value="nov">November</option>
                       <option value="dec">December</option>
                     </select>
-                    <select id="con-c-years" name="years">
+                    <select id="years_input" name="years">
                       <option value="2023">2023</option>
                       <option value="2024">2024</option>
                       <option value="2025">2025</option>
+                      <option value="2026">2026</option>
+                      <option value="2027">2027</option>
                     </select>
-                    <p class="con-c-ft">CVC</p>
-                    <input type="text" name="name" class="con-c-cvc" placeholder="XXX">
+                    <p class="details_label">CVC</p>
+                    <input type="text" name="name" class="cvc_input" placeholder="XXX">
                   </div>
                   
                   <div class="buttons3">
@@ -236,54 +245,51 @@
 
                 </div>
 
-                <div id="con-c-page4" class="hidden">
-                  <h1 id="con-c-title">Visit our U-Shop to redeem your giftcard</h1>
+                <div id="contribute_slide4" class="hidden">
+                  <h1 id="contribute_title">Visit our U-Shop to redeem your giftcard</h1>
                   <input type="button" value="Visit the U-Shop" id="shop-button">
-                </div>
-                
-                
+                </div>     
                 
               </div>
 
-            <div id="paragraph3" class="hidden"> 
-              <div id="con-c-page5"></div>
-                <img src= "assets/conpage/img_ushop-logo.png" width="225" height="100" id = "img_shoplogo" class='shop-pictures'>
-                <h3 id="con-ushop">A different way to</h3>
-                <h3 id="con-ushop">Shop with U-Pointz</h3>
-                <h3 id="con-ushop">&</h3>
-                <h3 id="con-ushop">Support what you like</h3><br><br>
-                <ul style="color: white">
-                  <li><p class="con-shop-text">Our high school internship programs!</p></li>
-                  <li><p class="con-shop-text">More resources to more students!</p></li>
-                  <li><p class="con-shop-text">$4YT scholarship for students!</p></li>
+            <div id="merch_slides" class="hidden"> 
+             <img src= "assets/conpage/img_ushop-logo.png" width="225" height="100" id = "img_shoplogo" class='shop-pictures'>
+             <h3 id="ushop">A different way to</h3>
+             <h3 id="ushop">Shop with U-Pointz</h3>
+             <h3 id="ushop">&</h3>
+             <h3 id="ushop">Support what you like</h3><br><br>
+             <ul style="color: #fafafa">
+              <li><p class="shop_text">Our high school internship programs!</p></li>
+              <li><p class="shop_text">More resources to more students!</p></li>
+              <li><p class="shop_text">$4YT scholarship for students!</p></li>
+             </ul>
+             <h4 id="gifts">Gifts-U-Can-Choose</h4>
+                <h4 id="gifts">designed by the</h4>
+                <h4 id="gifts">Student U-Crew</h4>
+             <img src="assets/conpage/img_hand-mouse.png" width="85" height="100" id="img_handmouse" class="shop-pictures">
+             <img src="assets/conpage/img_heart.png" width="115" height="80" id="img_heart" class="shop-pictures">
+             <img src="assets/conpage/img_gift.png" width="75" height="75" id="img_gift" class="shop-pictures">
+            </div>
+            <div>
+              <h4 id="pointz">Sharing U-Pointz</h4>
+              <ul id="pointz">
+                <li><p>Use these yourself or share them</p>
+                <p>with friends</p></li><br>
+                <li><p>Just click on the heart to make a free</p>
+                <p>account and spread the love</p></li>
                 </ul>
-                <h4 id="con-gifts">Gifts-U-Can-Choose</h4>
-                    <h4 id="con-gifts">designed by the</h4>
-                    <h4 id="con-gifts">Student U-Crew</h4>
-                <img src="assets/conpage/img_hand-mouse.png" width="85" height="100" id="img_handmouse" class="shop-pictures">
-                <img src="assets/conpage/img_heart.png" width="115" height="80" id="img_heart" class="shop-pictures">
-                <img src="assets/conpage/img_gift.png" width="75" height="75" id="img_gift" class="shop-pictures">
-                </div>
-                <div>
-                  <h4 id="con-pointz">Sharing U-Pointz</h4>
-                  <ul id="con-pointz">
-                    <li><p>Use these yourself or share them</p>
-                    <p>with friends</p></li><br>
-                    <li><p>Just click on the heart to make a free</p>
-                    <p>account and spread the love</p></li>
-                    </ul>
-                </div>
-                </div>
-                <div id="con-c-page6" class="hidden">
-                </div>
               </div>
-              <div id="con-bg"></div>
-            </section>
+            </div>
+
+          </div>
+
+          <div id="bg"></div>
+
+        </section>
 
         <div id="seperatebottom"></div>
 
         <footer>
-          <!--powerby-->
           <div class="desktop" id="partner">
               <div>
                 <h2 id="powerbyt">Powered by</h2>
