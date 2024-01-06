@@ -135,9 +135,9 @@ html {
   text-align:right;
   color:#ffffff;
   font-family:'coolvetica','coolvetica',serif;
-  margin-right:30px;
-  position:relative; 
-  bottom:325px;
+  position:relative;
+  right:-255px;
+  bottom:250px;
 }
 #con-pointz{
   text-align:right;
