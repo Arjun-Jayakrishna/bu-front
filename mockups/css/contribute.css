@@ -1,3 +1,5 @@
+/* GENERAL CSS */
+
 html, body {
   height: 100%;
   width: 100%;
@@ -13,6 +15,8 @@ html, body {
   font-family: "coolvetica";
   src: url("../../fonts/coolvetica.otf")format('opentype');
 }
+
+/* DESKTOP CSS */
 
 @media only screen and (min-width: 500px) {
 
@@ -85,7 +89,7 @@ html {
   font-size: 3vh;
 }
 
-#button1 {
+#info_button {
   background-color: #EF7F1A;
 }
 
@@ -105,7 +109,7 @@ html {
   margin-top: 7.5vh;
 }
 
-#con-paragraph{
+#slides{
   display: flex;
   border-radius: 1vh;
   background-color: #68b436;
@@ -115,23 +119,23 @@ html {
   margin-left: 0vw;
 }
 
-#paragraph1{
+#info_slides{
   margin: auto;
   line-height: 2.5vw;
 }
 
-.con-info-title{
+.info_title{
   font-family: 'coolvetica','coolvetica',serif;
   color: #fafafa;
 }
 
-#paragraph2{
+#contribute_slides{
   width:30vw;
   margin: auto;
   margin-top: 5vh;
 }
 
-#con-gifts{
+#gifts{
   text-align:right;
   color:#ffffff;
   font-family:'coolvetica','coolvetica',serif;
@@ -139,7 +143,8 @@ html {
   right:-255px;
   bottom:250px;
 }
-#con-pointz{
+
+#pointz{
   text-align:right;
   color:#ffffff;
   font-family:Arial, Helvetica, sans-serif;
@@ -147,12 +152,12 @@ html {
   position:relative; 
   bottom:550px;
 }
-#con-c-title{
+#contribute_title{
   color: #fafafa;
   font-size: 3vh;
   text-align: center;
 }
-#con-ushop{
+#ushop{
   color:#ffffff;
   font-size: 3vh;
   margin-left:10px;
@@ -187,13 +192,13 @@ html {
   bottom:590px
 }
 
-#con-c-form1{
+#amount_form{
   display:flex;
   flex-direction:row;
   height: 20vh;
 }
 
-.con-c-ft{
+.details_label{
   font-size: 2vh;
   padding-top: 0.2vh;
   padding-bottom: 0.2vh;
@@ -202,12 +207,12 @@ html {
   
 }
 
-#con-c-form-form{
+#details_inputs{
   margin-left: 1.5vw;
   height:10vh;
 }
 
-.con-c-ff{
+.detail_input{
   width: 21vw;
   background-color: #68b436;
   border-radius: 0.5vh;
@@ -222,27 +227,28 @@ input::placeholder {
   color: #fafafa;
 }
 
-.con-c-support {
+.support_amount {
   display: flex;
   flex-direction: column;
   width: 40vw;
 }
 
-.con-c-support-up {
+.support_upper {
   display: flex;
 }
 
-.con-c-support-down {
+.support_lower {
   display: flex;
+  margin-top: 2vh;
 }
 
-.con-c-support input[type="radio"] {
+.support_amount input[type="radio"] {
   opacity: 0;
   position: fixed;
   width: 0;
 }
 
-.con-c-support label {
+.support_amount label {
   display: inline-block;
   background-color: transparent;
   padding: 10px 30px;
@@ -254,22 +260,18 @@ input::placeholder {
   margin-top: 5px;
 }
 
-.con-c-support input[type="radio"]:checked + label {
+.support_amount input[type="radio"]:checked + label {
 background-color:#008DD2;
 border-color: #4c4;
 }
 
-#con-c-support-down{
-  margin-top: 2vh;
-}
-
-.con-csud{
+.amount_label{
   width: 5vw;
   color: #fafafa; 
   font-weight: bold;
 }
 
-.con-csud:hover {
+.amount_label:hover {
   cursor: grab;
 }
 
@@ -325,13 +327,23 @@ border-color: #4c4;
   padding-top: 25%;
 }
 
-#con-c-form2 {
+#initiative_form {
   font-size: 12px;
   text-align: center;
   margin-top: 10px;
 }
 
-#con-c-form2 input {
+.initiative_label{
+  width: 5vw;
+  color: #fafafa; 
+  font-weight: bold;
+}
+
+.initiative_label:hover {
+  cursor: grab;
+}
+
+#initiative_form input {
   appearance: none;
   padding: 5px 5px;
   border: 1px solid #fafafa;
@@ -339,7 +351,7 @@ border-color: #4c4;
   background-color: #68b436;
 }
 
-#con-c-form2 input:checked {
+#initiative_form input:checked {
   background-color: #fafafa;
 }
 
@@ -358,19 +370,19 @@ border-color: #4c4;
   font-family: 'coolvetica','coolvetica',serif;
 }
 
-#con-c-form3 {
+#payment_form {
   display:flex;
   flex-direction:row;
 }
 
-.con-c-cinfo {
+.card_info {
   display: flex;
   flex-direction: row;
   margin-top: 1vh;
   gap: 0.5vw;
 }
 
-#con-c-months {
+#months_input {
   width: 10vw;
   height: 4vh;
   margin-left: 2.5vw;
@@ -380,7 +392,7 @@ border-color: #4c4;
   color: #fafafa;
 }
 
-#con-c-years {
+#years_input {
   height: 4vh;
   border: 2px solid #fafafa;
   background-color: #68b436;
@@ -388,7 +400,7 @@ border-color: #4c4;
   color: #fafafa;
 }
 
-.con-c-cvc{
+.cvc_input{
   width: 3.5vw;
   background-color: #68b436;
   border-radius: 0.5vh;
@@ -430,7 +442,7 @@ border-color: #4c4;
   margin-top: 5vh;
 }
 
-#con-bg{
+#bg{
   border-bottom: 75vh solid #ea0f81;
 	border-left: 0px solid transparent;
 	border-right: 50vh solid transparent;
@@ -491,6 +503,7 @@ footer{
   width: auto;
 }
 
+/* MOBILE CSS */
 
 @media only screen and (max-width: 500px) {
 
