@@ -13,7 +13,9 @@ const c_page1 = document.getElementById('contribute_slide1');
 const c_page2 = document.getElementById('contribute_slide2');
 const c_page3 = document.getElementById('contribute_slide3');
 const c_page4 = document.getElementById('contribute_slide4');
-const c_page5 = document.getElementById('con-c-page5');
+const c_page5 = document.getElementById('contribute_slide5');
+const c_page6 = document.getElementById(contribute_slide6);
+
 
 
 
