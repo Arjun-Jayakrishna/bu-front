@@ -49,12 +49,12 @@ html {
 
 #consection{
   display: flex;
-  flex-direction:row;
+  /*flex-direction:row;*/
   background-color: #008dd2;
-  width:100%;
+  /* width:100%; */
   height:75vh;
   background-image: url(../assets/homepage/bg_mobile.png) ;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 #con-photo{
@@ -62,18 +62,35 @@ html {
   flex-direction: column;
   z-index:3;
   justify-content: center;
+  margin-top: 6vw;
   margin-left: 5vw;
   flex: 1;
 }
 
 .con-pictures{
   width: 60%;
-  min-width: 100px;
-  max-width: 400px;
+  min-width: 200px;
+  max-width: 500px;
 }
 
 .con-pictures:nth-of-type(2) {
   margin-top: 3vh;
+}
+
+#con-choose{
+  display: flex;
+  flex-direction: row;
+  margin-right: 5vw;
+  z-index: 3;
+  flex: 1;
+}
+
+#con-buttons{
+  display:flex;
+  flex-direction: column; 
+  margin-left: 0vw;
+  margin-right: 1vw;
+  margin-top: 7.5vh;
 }
 
 .con-button{
@@ -93,21 +110,6 @@ html {
   background-color: #EF7F1A;
 }
 
-#con-choose{
-  display: flex;
-  flex-direction: row;
-  margin-right: 5vw;
-  z-index: 3;
-  flex: 1;
-}
-
-#con-buttons{
-  display:flex;
-  flex-direction: column; 
-  margin-left: 0vw;
-  margin-right: 1vw;
-  margin-top: 7.5vh;
-}
 
 #slides{
   display: flex;
@@ -123,18 +125,31 @@ html {
   margin: auto;
   position: relative;
   left: 20%;
-  font-size: 95%;
+  overflow: hidden;
+  word-wrap: break-word;
 }
 
 .info_title{
   font-family: 'coolvetica','coolvetica',serif;
   color: #fafafa;
+  font-size: 2.5vw;
+  font-weight: 600;
+}
+
+.info_text{
+  font-size: 85%;
 }
 
 #contribute_slides{
   width:30vw;
   margin: auto;
   margin-top: 5vh;
+}
+
+#contribute_title{
+  color: #fafafa;
+  font-size: 3vh;
+  text-align: center;
 }
 
 #contribute_slide1{
@@ -173,11 +188,7 @@ html {
   position:relative; 
   bottom:550px;
 }
-#contribute_title{
-  color: #fafafa;
-  font-size: 3vh;
-  text-align: center;
-}
+
 #ushop{
   color:#ffffff;
   font-size: 3vh;
@@ -515,6 +526,44 @@ footer{
   height: 20vh;
   width: auto;
 }
+
+@media only screen and (max-width: 900px) {
+
+  #con-photo{
+    display: flex;
+    flex-direction: column;
+    z-index:3;
+    justify-content: center;
+    margin-top: 15vw;
+    margin-left: 3.5vw;
+    flex: 1;
+  }
+  
+  .con-pictures{
+    min-width: 175px;
+    max-width: 400px;
+  }
+  
+  }
+
+  @media only screen and (max-width: 750px) {
+
+    #con-photo{
+      display: flex;
+      flex-direction: column;
+      z-index:3;
+      justify-content: center;
+      margin-top: 16vw;
+      margin-left: 3.5vw;
+      flex: 1;
+    }
+    
+    .con-pictures{
+      min-width: 150px;
+      max-width: 400px;
+    }
+    
+  }
 
 /* MOBILE CSS */
 

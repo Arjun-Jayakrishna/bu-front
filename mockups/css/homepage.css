@@ -115,3 +115,217 @@ footer{
 }
 
 }
+
+@media only screen and (max-width: 750px) {
+
+  /* Will make resizing more smooth; to be added */
+
+}
+
+@media only screen and (max-width: 500px) {
+  #desktop{
+    display:none;
+  }
+
+  .hidden{
+    display: none;
+  }
+
+  #sectionmenu{
+    z-index: 9;
+  }
+
+  #menu-phonebar{
+      width:100%;
+      height:18vh;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      background-color: #ef7f1a;
+  }
+
+  #menu_homebutton{
+    background-color: transparent;
+    border-color: transparent;
+  }
+
+  #menu-bar-logo{
+    margin-top: 2.5vh;
+    height:13.5vh;
+  }
+
+  #menu_bar_menubutton{
+    margin-top: 2.5vh;
+    height:13.5vh;
+    background-color: transparent;
+    border-color: transparent;
+  }
+
+  #menu-menuimage{
+    height:13.5vh;
+  }
+
+  #menu-button{
+    background-color: #fafafa;
+  }
+
+  .menu-option{
+    width: 100%;
+    height:16.4vh;
+    margin:0;
+    border-width: 0px;
+    background-color: #ef7f1a;
+  }
+
+  .menu-images{
+    height:15vh;
+  }
+
+  #con-phonebar{
+    width:100%;
+    height:18vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #ef7f1a;
+  }
+
+  #con-bar-logo{
+    margin-top: 2.5vh;
+    height:13.5vh;
+  }
+
+  #con_firstpage{
+    background-color: #008dd2;
+    background-image: url(../assets/homepage/bg_mobile.png) ;
+    height:75vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .con-m-buttons{
+    width:40vw;
+    height:8vh;
+    border-radius: 2vh;
+    margin-bottom: 1vh;
+    background-color: transparent;
+    border-color: #fafafa;
+    color: #fafafa;
+    border-width: 0.5vh;
+    font-family: 'coolvetica','coolvetica',serif;
+    font-size: 3vh;
+    margin-left: 30vw;
+  }
+
+  #con_infopage{
+    height:75vh;
+    background-color: #008dd2;
+    background-image: url(../assets/homepage/bg_mobile.png) ;
+  }
+
+  #ci-top{
+    display: flex;
+    flex-direction: row;
+    height:10vh;
+    justify-content: space-around;
+  }
+
+  #ci-content{
+    width: 75vw;
+    margin-left: 12.5vw;
+    background-color: #68b436;
+    border-radius: 3vh;
+  }
+
+  #con_conpage{
+    height:75vh;
+    background-color: #008dd2;
+    background-image: url(../assets/homepage/bg_mobile.png) ;
+  }
+
+  #cc-top{
+    display: flex;
+    flex-direction: row;
+    height:10vh;
+    justify-content: space-around;
+  }
+
+  #cc-content{
+    width: 75vw;
+    margin-left: 12.5vw;
+    background-color: #68b436;
+    border-radius: 3vh;
+  }
+
+  #con_merchpage{
+    height:75vh;
+    background-color: #008dd2;
+    background-image: url(../assets/homepage/bg_mobile.png) ;
+  }
+
+  #cm-top{
+    display: flex;
+    flex-direction: row;
+    height:10vh;
+    justify-content: space-around;
+  }
+
+  #cm-content{
+    width: 75vw;
+    margin-left: 12.5vw;
+    background-color: #68b436;
+    border-radius: 3vh;
+  }
+
+
+  .con-title{
+    color:#fff;
+    font-size: 5vh;
+    font-family: 'coolvetica','coolvetica',serif;
+    margin-top: 1.7vh;
+  }
+
+  .con_back{
+    width:25vw;
+    height:8vh;
+    border-radius: 2vh;
+    background-color: #ef7f1a;
+    color:#fff;
+    border-width: 0vh;
+    font-family: 'coolvetica','coolvetica',serif;
+    font-size: 3vh;
+    margin-left: 30vw;
+    margin-top: 1vh;
+  }
+
+  footer{
+    width:100%;
+    height:7vh;
+    background-color: #ea0f81;
+    align-items: left;
+    margin:0;
+    float: left;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+  }
+
+  #powerbyt{
+    font-family: 'coolvetica','coolvetica',serif;
+    color: #fafafa;
+  }
+
+  #partner{
+    margin-left:5vw;
+    display:flex;
+    flex-direction: row;
+    margin-top: 1vh;
+  }
+
+  .sponsor{
+      height: 5vh;
+      width: auto;
+      margin: auto;
+  }
+}
